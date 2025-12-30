@@ -1,4 +1,4 @@
-# ═══════════════════════════════════════════════════════════════
+ # ═══════════════════════════════════════════════════════════════
 #                    TrendRadar 配置文件
 # ═══════════════════════════════════════════════════════════════
 
@@ -38,14 +38,18 @@ platforms:
     name: "财联社热门"
   - id: "ifeng"
     name: "凤凰网"
-  - id: "tieba"
-    name: "贴吧"
   - id: "weibo"
     name: "微博"
   - id: "douyin"
     name: "抖音"
   - id: "zhihu"
     name: "知乎"
+  - id: "gelonghui"
+    name: "格隆汇"
+  - id: "xueqiu"
+    name: "雪球"
+  - id: "jin10"
+    name: "金十数据"
 
 
 # ===============================================================
@@ -117,7 +121,7 @@ rss:
 #    • 适用场景：避免重复信息干扰
 # ===============================================================
 report:
-  mode: "current"                     # 可选: daily | current | incremental
+  mode: "incremental"                     # 可选: daily | current | incremental
   rank_threshold: 5                   # 排名高亮阈值
   sort_by_position_first: false       # true=按配置位置排序，false=按热点条数排序
   max_news_per_keyword: 0             # 每个关键词最大显示数量（0=不限制）
